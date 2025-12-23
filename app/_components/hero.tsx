@@ -2,9 +2,9 @@
 
 import { Icon } from "@iconify/react";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 export default function Hero() {
 	const [showPage, setShowPage] = useState(false);

@@ -1,10 +1,19 @@
 "use client";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Icon } from "@iconify/react";
 
 export default function AboutMe() {
+	const [isNavigating, setIsNavigating] = useState(false);
 	const router = useRouter();
+	const handleNavigation = () => {
+		setIsNavigating(true);
+		setTimeout(() => {
+			router.push("/projects");
+		}, 1000);
+	};
 	return (
 		<section className="">
 			<div className="flex items-center justify-center px-50">
@@ -21,16 +30,28 @@ export default function AboutMe() {
 							</p>
 							<p>
 								I love building things with code, exploring new technologies,
-								and bringing ideas to life, whether it’s a fun side project or
+								and bringing ideas to life, whether it is a fun side project or
 								something that solves real-world problems.
 							</p>
 							<p>Welcome to my portfolio!</p>
 							<Button
-								className="cursor-pointer border border-black hover:bg-orange-100"
+								className={`cursor-pointer border border-black hover:bg-orange-100 ${isNavigating ? "bg-orange-100" : ""}`}
 								variant="outline"
-								onClick={() => router.push("/projects")}
+								onClick={() => handleNavigation()}
+								disabled={isNavigating}
 							>
-								View my work!
+								{isNavigating ? (
+									<div className="flex items-center">
+										<p className="pr-5">Projects Loading</p>
+										<Icon
+											icon="eos-icons:bubble-loading"
+											width="30"
+											height="30"
+										/>
+									</div>
+								) : (
+									" View my work!"
+								)}
 							</Button>
 						</div>
 						<div className="flex items-center justify-center">

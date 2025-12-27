@@ -42,7 +42,7 @@ export default function AboutMe() {
 							>
 								{isNavigating ? (
 									<div className="flex items-center">
-										<p className="pr-5">Projects Loading</p>
+										<p className="pr-5">Loading...</p>
 										<Icon
 											icon="eos-icons:bubble-loading"
 											width="30"

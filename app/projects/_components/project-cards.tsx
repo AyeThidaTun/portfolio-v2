@@ -7,7 +7,7 @@ export default function ProjectCard() {
 			<Card className="w-full max-w-sm">
 				<CardContent className="row-span-2 grid-rows-subgrid space-y-5">
 					<Image
-						src={"/lamp.jpg"}
+						src={"/temp.jpg"}
 						alt={""}
 						className="object-cover aspect-video"
 						width={400}
@@ -25,7 +25,7 @@ export default function ProjectCard() {
 			<Card className="w-full max-w-sm">
 				<CardContent className="row-span-2 grid-rows-subgrid space-y-5">
 					<Image
-						src={"/lamp.jpg"}
+						src={"/temp.jpg"}
 						alt={""}
 						className="object-cover aspect-video"
 						width={400}
@@ -43,7 +43,7 @@ export default function ProjectCard() {
 			<Card className="w-full max-w-sm">
 				<CardContent className="row-span-2 grid-rows-subgrid space-y-5">
 					<Image
-						src={"/lamp.jpg"}
+						src={"/temp.jpg"}
 						alt={""}
 						className="object-cover aspect-video"
 						width={400}

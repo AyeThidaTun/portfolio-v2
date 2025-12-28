@@ -1,12 +1,13 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-import { FocusCards } from "@/components/ui/focus-cards";
+// import { FocusCards } from "@/components/ui/focus-cards";
 import {
 	NavigationMenu,
 	NavigationMenuItem,
 	NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
-import { cardsData } from "./_components/project-data";
+import ProjectCard from "./_components/project-cards";
+// import { cardsData } from "./_components/project-data";
 
 export default function Projects() {
 	return (
@@ -22,12 +23,10 @@ export default function Projects() {
 					</NavigationMenuItem>
 				</NavigationMenu>
 			</div>
-			<div className="flex justify-center px-50">
-				<div className="border rounded-md overflow-x-auto">
-					<h3 className="text-center text-xl py-10">Projects</h3>
-					<p className="text-center">{`"Every project is a step forward, proof of how far I've come and a glimpse of where I'm going."`}</p>
-					<FocusCards cards={cardsData} />
-				</div>
+			<h3 className="text-center text-xl py-10">Projects</h3>
+			<p className="text-center">{`"Every project is a step forward, proof of how far I've come and a glimpse of where I'm going."`}</p>
+			<div className="flex justify-center py-10">
+				<ProjectCard />
 			</div>
 		</section>
 	);

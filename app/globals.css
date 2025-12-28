@@ -120,4 +120,7 @@
   body {
     @apply bg-background text-foreground;
   }
+  .custom-cursor:hover {
+    cursor: url('/cursor.svg') 32 32, pointer;
+  }
 }

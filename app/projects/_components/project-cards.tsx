@@ -5,20 +5,20 @@ import { cardsData } from "./project-data";
 
 export default function ProjectCard() {
 	return (
-		<section className="flex-row grid grid-cols-3 gap-x-10">
+		<section className="flex-row grid grid-cols-3 gap-10">
 			{cardsData.map((card) => (
-				<Card key={card.id} className="w-full max-w-sm">
+				<Card key={card.id} className="border rounded-md w-full max-w-sm">
 					<Link href={card.href}>
 						<div className="custom-cursor">
 							<CardContent className="row-span-2 grid-rows-subgrid space-y-5">
 								<Image
 									src={card.src}
 									alt={""}
-									className="object-cover aspect-video"
+									className="object-cover aspect-video rounded-md"
 									width={400}
 									height={200}
 								/>
-								<h2 className="text-md font-bold">{card.title}</h2>
+								<h2 className="text-center text-md font-bold">{card.title}</h2>
 								<p className="">{card.description}</p>
 							</CardContent>
 						</div>

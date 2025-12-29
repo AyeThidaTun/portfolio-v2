@@ -2,24 +2,28 @@ import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { cardsData } from "./project-data";
+import Tabs from "./tabs";
 
 export default function ProjectCard() {
 	return (
-		<section className="flex-row grid grid-cols-3 gap-10">
+		<section className="grid grid-cols-2 gap-10">
 			{cardsData.map((card) => (
-				<Card key={card.id} className="border rounded-md w-full max-w-sm">
+				<Card key={card.id} className="border rounded-md w-full max-w-md">
 					<Link href={card.href}>
 						<div className="custom-cursor">
-							<CardContent className="row-span-2 grid-rows-subgrid space-y-5">
+							<CardContent className="space-y-4">
 								<Image
 									src={card.src}
-									alt={""}
+									alt={card.title}
 									className="object-cover aspect-video rounded-md"
 									width={400}
 									height={200}
 								/>
 								<h2 className="text-center text-md font-bold">{card.title}</h2>
-								<p className="">{card.description}</p>
+								<p className="text-md">{card.description}</p>
+								<div>
+									<Tabs tabsData={card.tabs} />
+								</div>
 							</CardContent>
 						</div>
 					</Link>

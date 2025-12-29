@@ -1,13 +1,11 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-// import { FocusCards } from "@/components/ui/focus-cards";
 import {
 	NavigationMenu,
 	NavigationMenuItem,
 	NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 import ProjectCard from "./_components/project-cards";
-// import { cardsData } from "./_components/project-data";
 
 export default function Projects() {
 	return (
@@ -18,6 +16,15 @@ export default function Projects() {
 						<NavigationMenuLink asChild>
 							<Link href="/">
 								<Icon icon="ic:sharp-home" width="50" height="50" />
+							</Link>
+						</NavigationMenuLink>
+					</NavigationMenuItem>
+				</NavigationMenu>
+                <NavigationMenu className="list-none underline fixed right-0 px-5 py-5">
+					<NavigationMenuItem>
+						<NavigationMenuLink asChild>
+							<Link href="#">
+								<Icon icon="charm:arrow-right" width="50" height="50" />
 							</Link>
 						</NavigationMenuLink>
 					</NavigationMenuItem>

@@ -20,7 +20,7 @@ export default function Projects() {
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 				</NavigationMenu>
-                <NavigationMenu className="list-none underline fixed right-0 px-5 py-5">
+				<NavigationMenu className="list-none underline fixed right-0 px-5 py-5">
 					<NavigationMenuItem>
 						<NavigationMenuLink asChild>
 							<Link href="#">

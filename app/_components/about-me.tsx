@@ -30,10 +30,12 @@ export default function AboutMe() {
 							</p>
 							<p>
 								I love building things with code, exploring new technologies,
-								and bringing ideas to life, whether it is a fun side project or
-								something that solves real-world problems.
+								and bringing ideas to life.
 							</p>
-							<p>Welcome to my portfolio!</p>
+							<p>
+								This portfolio was designed and developed from the ground up as
+								a showcase of my skills and projects.
+							</p>
 							<Button
 								className={`cursor-pointer border border-black hover:bg-orange-100 ${isNavigating ? "bg-orange-100" : ""}`}
 								variant="outline"
@@ -55,13 +57,22 @@ export default function AboutMe() {
 							</Button>
 						</div>
 						<div className="flex items-center justify-center">
-							<Image
+							{/* <Image
 								src="/profile.jpeg"
 								alt="profile"
 								width={350}
 								height={300}
 								className="rounded-lg"
-							/>
+							/> */}
+							<div className="relative aspect-square w-25 lg:w-100 col-span-1">
+								<Image
+									src="/profile.jpeg"
+									alt="profile"
+									fill
+									sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+									className="object-cover rounded-sm"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>

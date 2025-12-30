@@ -66,7 +66,7 @@ export const cardsData = [
 			{ id: 6, name: "Google Auth" },
 		],
 	},
-    {
+	{
 		id: 5,
 		src: "/v1.png",
 		slug: "portfolio",
@@ -79,12 +79,12 @@ export const cardsData = [
 			{ id: 3, name: "Tailwind CSS" },
 			{ id: 4, name: "Framer Motion" },
 			{ id: 5, name: "GitHub" },
-            { id: 6, name: "Aceternity UI" },
+			{ id: 6, name: "Aceternity UI" },
 		],
 	},
 	{
 		id: 6,
-		src: "/coffee.jpg",
+		src: "/typing.png",
 		slug: "typing-game",
 		title: "Coffee Type - Typing Game",
 		description:

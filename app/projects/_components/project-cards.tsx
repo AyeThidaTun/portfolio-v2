@@ -8,8 +8,11 @@ export default function ProjectCard() {
 	return (
 		<section className="grid grid-cols-2 gap-10">
 			{cardsData.map((card) => (
-				<Card key={card.id} className="border rounded-md w-full max-w-md">
-					<Link href={card.href}>
+				<Card
+					key={card.id}
+					className="border-gray-300 border rounded-md w-full max-w-md"
+				>
+					<Link href={`../../projects/details/${card.slug}`}>
 						<div className="custom-cursor">
 							<CardContent className="space-y-4">
 								<Image

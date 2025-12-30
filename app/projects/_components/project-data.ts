@@ -66,8 +66,24 @@ export const cardsData = [
 			{ id: 6, name: "Google Auth" },
 		],
 	},
-	{
+    {
 		id: 5,
+		src: "/v1.png",
+		slug: "portfolio",
+		title: "Portfolio Website Version 1",
+		description:
+			"My first ever portfolio website built using React, TypeScript, Tailwind CSS and Framer Motion.",
+		tabs: [
+			{ id: 1, name: "React" },
+			{ id: 2, name: "TypeScript" },
+			{ id: 3, name: "Tailwind CSS" },
+			{ id: 4, name: "Framer Motion" },
+			{ id: 5, name: "GitHub" },
+            { id: 6, name: "Aceternity UI" },
+		],
+	},
+	{
+		id: 6,
 		src: "/coffee.jpg",
 		slug: "typing-game",
 		title: "Coffee Type - Typing Game",

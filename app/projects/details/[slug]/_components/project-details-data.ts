@@ -71,8 +71,25 @@ export const projectDetailsData = [
 		],
 		href: "https://hope-fu.onrender.com/",
 	},
-	{
+    {
 		id: 5,
+		src: "/v1.png",
+		slug: "portfolio",
+		title: "Portfolio Website Version 1",
+		description:
+			"This was my first ever portfolio website built using React, TypeScript, Tailwind CSS and Framer Motion.\n\n It was a learning journey as I was still getting used to these technologies back then. Building this website helped me understand the fundamentals of React components, state management, and responsive design.",
+		tabs: [
+			{ id: 1, name: "React" },
+			{ id: 2, name: "TypeScript" },
+			{ id: 3, name: "Tailwind CSS" },
+			{ id: 4, name: "Framer Motion" },
+			{ id: 5, name: "GitHub" },
+            { id: 6, name: "Aceternity UI" },
+		],
+        href: "https://by-anna.vercel.app/"
+	},
+	{
+		id: 6,
 		src: "/coffee.jpg",
 		slug: "typing-game",
 		title: "Coffee Type - Typing Game",

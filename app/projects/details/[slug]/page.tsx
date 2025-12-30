@@ -5,6 +5,8 @@ import { useParams } from "next/navigation";
 import NavigationHome from "@/app/_components/navigation-home";
 import { Button } from "@/components/ui/button";
 import { projectDetailsData } from "./_components/project-details-data";
+import Link from "next/link";
+import YoutubePlayer from "./_components/youtube-player";
 
 export default function ProjectDetailsPage() {
 	const params = useParams();
@@ -12,7 +14,6 @@ export default function ProjectDetailsPage() {
 	return (
 		<section className="font-serif">
 			<NavigationHome href="/" />
-			<h1 className="text-lg text-center py-5">Project Details Page</h1>
 			{projectDetailsData
 				.filter((project) => project.slug === slug)
 				.map((project) => (
@@ -31,19 +32,38 @@ export default function ProjectDetailsPage() {
 									<p>Back</p>
 								</Button>
 							</div>
-							<section className="grid grid-cols-3 gap-x-10 ">
-								<div className="col-span-1">
+							<section className="grid grid-cols-3 gap-x-20 ">
+								<div className="relative aspect-video w-25 lg:w-87.5 col-span-1">
 									<Image
 										src={project.src}
 										alt={project.title}
-										className="object-cover aspect-video rounded-md"
-										width={500}
-										height={200}
+										fill
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+										className="object-cover rounded-sm"
 									/>
 								</div>
-								<div className="col-span-2">
+								<div className="col-span-2 space-y-5">
 									<h2 className="text-lg font-semibold">{project.title}</h2>
-									<p className="text-gray-600">{project.description}</p>
+									<p className="whitespace-pre-line">{project.description}</p>
+									{project.href ? (
+										<p className="py-5">
+											Project link -{" "}
+											<Link
+												href={project.href}
+												className="underline text-blue-600"
+												target="blank"
+											>
+												{project.href}
+											</Link>
+										</p>
+									) : (
+										""
+									)}
+									{project.videoId ? (
+										<YoutubePlayer videoId={project.videoId} />
+									) : (
+										""
+									)}
 								</div>
 							</section>
 						</div>

@@ -1,11 +1,11 @@
 "use client";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useParams } from "next/navigation";
 import NavigationHome from "@/app/_components/navigation-home";
 import { Button } from "@/components/ui/button";
 import { projectDetailsData } from "./_components/project-details-data";
-import Link from "next/link";
 import YoutubePlayer from "./_components/youtube-player";
 
 export default function ProjectDetailsPage() {

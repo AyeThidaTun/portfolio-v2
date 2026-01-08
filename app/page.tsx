@@ -11,9 +11,9 @@ export default function Home() {
 	return (
 		<section className="font-serif">
 			<div className="min-h-screen flex flex-col text-center items-center justify-center font-serif">
-				<h3>
+				<h3 className="px-2 lg:p-0">
 					Hi! I am Aye Thida Tun, a passionate full stack developer.
-					<br />
+					<br className="hidden lg:block"/>
 					This website talks about my projects, passion and experiences.
 				</h3>
 				<motion.div

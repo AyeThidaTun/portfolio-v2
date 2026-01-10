@@ -49,7 +49,7 @@ export default function SkillCard() {
 								animate={{ opacity: 1, transition: { delay: 1 } }}
 								className="text-sm"
 							>
-								{skill.value/10 }/10
+								{skill.value / 10}/10
 							</motion.p>
 						</motion.div>
 					</div>

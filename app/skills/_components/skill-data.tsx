@@ -39,7 +39,7 @@ export const skillsData = [
 	{
 		id: 7,
 		src: "/skills/css.svg",
-		value: 70,
+		value: 60,
 		name: "CSS",
 	},
 	{

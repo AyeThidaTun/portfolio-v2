@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Section1() {
 	return (
-		<section className="px-20 py-15 max-w-5xl mx-auto">
+		<section className="px-20 py-20 max-w-6xl mx-auto">
 			<div className="grid md:grid-cols-2 gap-12 items-center">
 				<div>
 					<h2 className="text-3xl font-bold mb-6">Beyond the Code</h2>
@@ -12,13 +12,14 @@ export default function Section1() {
 							tutorials. What started as curiosity became a passion.
 						</p>
 						<p>
+							Being an international student, I have overcome challenges and
+							adapted to new environments. This experience has made me resilient
+							and open-minded, qualities that I bring to my work as a developer.
+						</p>
+						<p>
 							Outside of coding, I like reading and swimming. I find that those
 							hobbies actually improves my problem-solving as they help me think
 							more clearly and relax my mind.
-						</p>
-						<p>
-							I am always learning new things and looking for ways to grow, both
-							personally and professionally.
 						</p>
 					</div>
 				</div>

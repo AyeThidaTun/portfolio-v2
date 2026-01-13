@@ -1,6 +1,8 @@
 import NavigationHome from "../_components/navigation-home";
+import Quote from "./_components/quote-block";
 import Section1 from "./_components/section-1";
 import Section2 from "./_components/section-2";
+// import Section3 from "./_components/section-3";
 export default function MoreAboutMe() {
 	return (
 		<section className="font-serif">
@@ -10,6 +12,8 @@ export default function MoreAboutMe() {
 			</div>
 			<Section1 />
 			<Section2 />
+			<Quote />
+			{/* <Section3 /> */}
 		</section>
 	);
 }

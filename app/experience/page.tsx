@@ -5,17 +5,17 @@ import Section2 from "./_components/section-2";
 import Section3 from "./_components/section-3";
 // import Values from "./_components/values";
 export default function MoreAboutMe() {
-  return (
-    <section className="font-serif">
-      <NavigationHome href="/projects" text="Back to Projects" />
-      <div className="flex flex-col justify-center items-center py-10">
-        <h1 className="text-3xl">More About Me</h1>
-      </div>
-      <Section1 />
-      <Section2 />
-      <Quote />
-      {/* <Values/> */}
-      <Section3 />
-    </section>
-  );
+	return (
+		<section className="font-serif">
+			<NavigationHome href="/projects" text="Back to Projects" />
+			<div className="flex flex-col justify-center items-center py-10">
+				<h1 className="text-3xl">More About Me</h1>
+			</div>
+			<Section1 />
+			<Section2 />
+			<Quote />
+			{/* <Values/> */}
+			<Section3 />
+		</section>
+	);
 }

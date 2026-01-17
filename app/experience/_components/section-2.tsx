@@ -19,10 +19,11 @@ export default function Section2() {
 						</h1>
 						<p className="pt-3 pr-50">
 							I was part of the International Students Club (ISC) for 2 years
-							during my poly life. I was an assistant treasurer who helped manage the
-							budget and procurement of the events organized by the club. I also
-							helped organize and coordinate events for the club in roles such
-							as game master, group leader, publicity and registration.
+							during my poly life. I was an assistant treasurer who helped
+							manage the budget and procurement of the events organized by the
+							club. I also helped organize and coordinate events for the club in
+							roles such as game master, group leader, publicity and
+							registration.
 						</p>
 						<p className="pt-3 pr-50">
 							I also contributed to community service activities by volunteering

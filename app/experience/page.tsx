@@ -16,6 +16,9 @@ export default function MoreAboutMe() {
 					<Link href="https://www.linkedin.com/in/ayethidatun/" target="_blank">
 						<Icon icon="skill-icons:linkedin" width="30" height="30" />
 					</Link>
+					<Link href="https://github.com/AyeThidaTun" target="_blank">
+						<Icon icon="bytesize:github" width="30" height="30" />
+					</Link>
 					<Link href="mailto:ayethidatun.anna@gmail.com">
 						<Icon icon="logos:google-gmail" width="30" height="30" />
 					</Link>

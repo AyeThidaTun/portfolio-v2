@@ -1,3 +1,4 @@
+"use client";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import {
@@ -13,10 +14,6 @@ export default function NavigationHome({
 	href?: string;
 	text?: string;
 }) {
-	if (typeof window !== 'undefined') {
-		console.log('CLIENT SIDE - href:', href, 'text:', text);
-	}
-	console.log('SERVER SIDE - href:', href, 'text:', text);
 	return (
 		<section className="fixed inset-x-0 top-0 z-50 bg-white lg:bg-transparent">
 			<div className="flex justify-between items-center p-2 lg:p-5">

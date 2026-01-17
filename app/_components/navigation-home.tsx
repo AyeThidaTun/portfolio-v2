@@ -13,6 +13,7 @@ export default function NavigationHome({
 	href?: string;
 	text?: string;
 }) {
+	const showSecondaryNav = Boolean(href && text);
 	return (
 		<section className="fixed inset-x-0 top-0 z-50 bg-white lg:bg-transparent">
 			<div className="flex justify-between items-center p-2 lg:p-5">
@@ -26,11 +27,11 @@ export default function NavigationHome({
 					</NavigationMenuItem>
 				</NavigationMenu>
 
-				{href && (
+				{showSecondaryNav && (
 					<NavigationMenu className="list-none">
 						<NavigationMenuItem>
 							<NavigationMenuLink asChild>
-								<Link href={href}>
+								<Link href={href || ""}>
 									<div className="flex items-center gap-2">
 										<p className="text-base">{text}</p>
 										<Icon icon="charm:arrow-right" width="50" height="50" />

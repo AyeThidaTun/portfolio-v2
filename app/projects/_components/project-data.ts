@@ -30,8 +30,9 @@ export const cardsData = [
 			{ id: 3, name: "Bootstrap" },
 			{ id: 4, name: "Prisma ORM" },
 			{ id: 5, name: "Neon Database" },
-			{ id: 6, name: "GitHub" },
-			{ id: 7, name: "Azure" },
+			{ id: 6, name: "WebSocket" },
+			{ id: 7, name: "GitHub" },
+			{ id: 8, name: "Azure" },
 		],
 	},
 	{

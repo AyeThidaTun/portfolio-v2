@@ -10,9 +10,11 @@ import {
 export default function NavigationHome({
 	href,
 	text,
+	direction,
 }: {
 	href?: string;
 	text?: string;
+	direction?: "left" | "right";
 }) {
 	return (
 		<section className="fixed inset-x-0 top-0 z-50 bg-white lg:bg-transparent">
@@ -33,8 +35,13 @@ export default function NavigationHome({
 							<NavigationMenuLink asChild>
 								<Link href={href || ""}>
 									<div className="flex items-center gap-2">
+										{direction === "left" && (
+											<Icon icon="charm:arrow-left" width="50" height="50" />
+										)}
 										<p className="text-base">{text}</p>
-										<Icon icon="charm:arrow-right" width="50" height="50" />
+										{direction === "right" && (
+											<Icon icon="charm:arrow-right" width="50" height="50" />
+										)}
 									</div>
 								</Link>
 							</NavigationMenuLink>

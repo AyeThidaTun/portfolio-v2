@@ -9,7 +9,11 @@ import Section3 from "./_components/section-3";
 export default function MoreAboutMe() {
 	return (
 		<section className="font-serif">
-			<NavigationHome href="/projects" text="Back to Projects" />
+			<NavigationHome
+				href="/projects"
+				text="Back to Projects"
+				direction="left"
+			/>
 			<div className="flex flex-col justify-center items-center py-5">
 				<h1 className="text-2xl lg:text-3xl pt-20">More About Me</h1>
 				<div className="flex flex-row gap-x-5 py-5">

@@ -11,7 +11,7 @@ export default function MoreAboutMe() {
 		<section className="font-serif">
 			<NavigationHome href="/projects" text="Back to Projects" />
 			<div className="flex flex-col justify-center items-center py-5">
-				<h1 className="text-3xl">More About Me</h1>
+				<h1 className="text-2xl lg:text-3xl pt-20">More About Me</h1>
 				<div className="flex flex-row gap-x-5 py-5">
 					<Link href="https://www.linkedin.com/in/ayethidatun/" target="_blank">
 						<Icon icon="skill-icons:linkedin" width="30" height="30" />

@@ -39,8 +39,10 @@ export default function Section3() {
 		},
 	];
 	return (
-		<section className="pt-10">
-			<h2 className="text-4xl pl-8">My achievements and activities</h2>
+		<section className="lg:pt-10">
+			<h2 className="text-2xl lg:text-4xl pl-8">
+				My achievements and activities
+			</h2>
 			<FocusCards cards={cards} />
 		</section>
 	);

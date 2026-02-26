@@ -19,6 +19,22 @@ export const cardsData = [
 	},
 	{
 		id: 2,
+		src: "/amber.png",
+		slug: "amber-creative",
+		title: "Amber Creative - Website Development",
+		description:
+			"A portfolio website developed for Amber Creative, a digital agency where I interned during my third year at Singapore Polytechnic. Built using React, Tailwind CSS, Framer Motion, and Directus CMS to deliver a modern, responsive, and animated user experience.",
+		tabs: [
+			{ id: 1, name: "React" },
+			{ id: 2, name: "TypeScript" },
+			{ id: 3, name: "Tailwind CSS" },
+			{ id: 4, name: "Framer Motion" },
+			{ id: 5, name: "Directus CMS" },
+			{ id: 6, name: "GitHub" },
+		],
+	},
+	{
+		id: 3,
 		slug: "study-group",
 		src: "/study.jpg",
 		title: "Study Group Web Application",
@@ -36,23 +52,23 @@ export const cardsData = [
 		],
 	},
 	{
-		id: 3,
-		src: "/amber.png",
-		slug: "amber-creative",
-		title: "Amber Creative - Website Development",
+		id: 4,
+		src: "/typing.png",
+		slug: "typing-game",
+		title: "Coffee Type - Typing Game",
 		description:
-			"A portfolio website developed for Amber Creative, a digital agency where I interned during my third year at Singapore Polytechnic. Built using React, Tailwind CSS, Framer Motion, and Directus CMS to deliver a modern, responsive, and animated user experience.",
+			"A coffee-themed typing game that helps users improve typing speed and accuracy. Backend development is in progress to support user authentication and progress tracking over time.",
 		tabs: [
 			{ id: 1, name: "React" },
 			{ id: 2, name: "TypeScript" },
 			{ id: 3, name: "Tailwind CSS" },
 			{ id: 4, name: "Framer Motion" },
-			{ id: 5, name: "Directus CMS" },
-			{ id: 6, name: "GitHub" },
+			{ id: 5, name: "Prisma ORM" },
+			{ id: 6, name: "Vercel" },
 		],
 	},
 	{
-		id: 4,
+		id: 5,
 		src: "/hope-fu.png",
 		slug: "hopefu",
 		title: "Hopefu - Personality Test Web App",
@@ -68,7 +84,7 @@ export const cardsData = [
 		],
 	},
 	{
-		id: 5,
+		id: 6,
 		src: "/v1.png",
 		slug: "portfolio",
 		title: "Portfolio Website Version 1",
@@ -82,22 +98,6 @@ export const cardsData = [
 			{ id: 5, name: "GitHub" },
 			{ id: 6, name: "Aceternity UI" },
 			{ id: 7, name: "Vercel" },
-		],
-	},
-	{
-		id: 6,
-		src: "/typing.png",
-		slug: "typing-game",
-		title: "Coffee Type - Typing Game",
-		description:
-			"A coffee-themed typing game that helps users improve typing speed and accuracy. Backend development is in progress to support user authentication and progress tracking over time.",
-		tabs: [
-			{ id: 1, name: "React" },
-			{ id: 2, name: "TypeScript" },
-			{ id: 3, name: "Tailwind CSS" },
-			{ id: 4, name: "Framer Motion" },
-			{ id: 5, name: "Prisma ORM" },
-			{ id: 6, name: "Vercel" },
 		],
 	},
 ];

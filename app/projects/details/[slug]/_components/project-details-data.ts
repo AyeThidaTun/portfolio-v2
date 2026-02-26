@@ -21,6 +21,23 @@ export const projectDetailsData = [
 	},
 	{
 		id: 2,
+		src: "/amber.png",
+		slug: "amber-creative",
+		title: "Amber Creative - Website Development",
+		description:
+			"During my internship at Amber Creative, I started learning React and Tailwind CSS. This project was one of the projects I did during internship.\n\nIt's a portfolio website developed for the company and was built using React, Tailwind CSS, Framer Motion, and Directus CMS to deliver a modern, responsive, and animated user experience.\n\n Main learning points would be attention to details in design implementation, responsive design, learning new Content Management System (CMS) and working in a professional environment.",
+		tabs: [
+			{ id: 1, name: "React" },
+			{ id: 2, name: "TypeScript" },
+			{ id: 3, name: "Tailwind CSS" },
+			{ id: 4, name: "Framer Motion" },
+			{ id: 5, name: "Directus CMS" },
+			{ id: 6, name: "GitHub" },
+		],
+		href: "https://ambercreative.sg/",
+	},
+	{
+		id: 3,
 		slug: "study-group",
 		src: "/study.jpg",
 		title: "Study Group Web Application",
@@ -38,29 +55,12 @@ export const projectDetailsData = [
 		href: "https://grp1-gitgud-cicd-cebtafaaa3djfwhk.southeastasia-01.azurewebsites.net/",
 	},
 	{
-		id: 3,
-		src: "/amber.png",
-		slug: "amber-creative",
-		title: "Amber Creative - Website Development",
-		description:
-			"During my internship at Amber Creative, I started learning React and Tailwind CSS. This project was one of the projects I did during internship.\n\nIt's a portfolio website developed for the company and was built using React, Tailwind CSS, Framer Motion, and Directus CMS to deliver a modern, responsive, and animated user experience.\n\n Main learning points would be attention to details in design implementation, responsive design, learning new Content Management System (CMS) and working in a professional environment.",
-		tabs: [
-			{ id: 1, name: "React" },
-			{ id: 2, name: "TypeScript" },
-			{ id: 3, name: "Tailwind CSS" },
-			{ id: 4, name: "Framer Motion" },
-			{ id: 5, name: "Directus CMS" },
-			{ id: 6, name: "GitHub" },
-		],
-		href: "https://ambercreative.sg/",
-	},
-	{
 		id: 4,
 		src: "/hope-fu.png",
 		slug: "hopefu",
 		title: "Hopefu - Personality Test Web App",
 		description:
-			"I got to participate in this project with a friend's recommendation. Their project theme was something I haven't done before so I decided to volunteer in development process.\n\nIt's a personality test web application focused on self-discovery and personal growth. Users can explore their strengths, reflect through journaling features, and set personal goals to track their development over time.",
+			"I got to participate in this project with a friend's recommendation. Their project theme was something I haven't done before so I decided to volunteer in development process.\n\nIt's a personality test web application focused on self-discovery and personal growth. Users can explore their strengths, reflect through journaling features, and set personal goals to track their development over time. \n (Note: Only Google login is implemented for now)",
 		tabs: [
 			{ id: 1, name: "React" },
 			{ id: 2, name: "TypeScript" },
@@ -69,7 +69,7 @@ export const projectDetailsData = [
 			{ id: 5, name: "GitHub" },
 			{ id: 6, name: "Google Auth" },
 		],
-		href: "https://hope-fu.onrender.com/",
+		href: "https://hopefu.vercel.app/login",
 	},
 	{
 		id: 5,

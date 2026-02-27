@@ -42,7 +42,7 @@ export const projectDetailsData = [
 		src: "/study.jpg",
 		title: "Study Group Web Application",
 		description:
-			"This was a four-person group project. It's a full-stack study group web application designed for Singapore Polytechnic students.\n\n I implemented features that allow users to create and join study groups, book on-campus study rooms, manage bookings, and submit feedback after each study session.\n\nMain learning points from this projects are version control using GitHub, state management features and collaboration with team members.",
+			"This was a four-person group project. It's a full-stack study group web application designed for Singapore Polytechnic students.\n\n I implemented features that allow users to create and join study groups, book on-campus study rooms, manage bookings, and submit feedback after each study session.\n\nMain learning points from this projects are version control using GitHub, state management features and collaboration with team members.\n(Note: Use these credentials to log in or register a new account: \nEmail:bob.23@ichat.sp.edu.sg\nPassword: Password123!)",
 		tabs: [
 			{ id: 1, name: "JavaScript" },
 			{ id: 2, name: "HTML/CSS" },
@@ -52,7 +52,7 @@ export const projectDetailsData = [
 			{ id: 6, name: "GitHub" },
 			{ id: 7, name: "Azure" },
 		],
-		href: "https://grp1-gitgud-cicd-cebtafaaa3djfwhk.southeastasia-01.azurewebsites.net/",
+		href: "https://study-group-app-dj5e.onrender.com/",
 	},
 	{
 		id: 4,

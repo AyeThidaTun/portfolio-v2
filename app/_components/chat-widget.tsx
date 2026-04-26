@@ -76,7 +76,7 @@ export default function ChatWidget() {
 					{/* Close button */}
 					<Button
 						onClick={() => setOpen(false)}
-						className="text-white/40 hover:text-white p-1 rounded-lg hover:bg-red-500/30 transition"
+						className="text-white/40 p-1 rounded-lg hover:bg-white hover:text-black transition"
 					>
 						<svg
 							width="16"

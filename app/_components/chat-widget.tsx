@@ -49,18 +49,22 @@ export default function ChatWidget() {
 		<>
 			{/* PANEL — only visible when open===true */}
 			<div
-				className={`fixed bottom-24 right-6 z-50 w-80 sm:w-96 flex flex-col rounded-2xl shadow-2xl 
-          overflow-hidden transition-all duration-300 origin-bottom-right backdrop-blur-md ${
+				className={`fixed z-50 flex flex-col shadow-2xl overflow-hidden transition-all duration-300 backdrop-blur-md
+					bottom-0 right-0 w-full h-dvh rounded-t-2xl
+					sm:h-[480px] sm:bottom-24 sm:right-6 sm:w-96 sm:rounded-2xl sm:origin-bottom-right ${
 						open
 							? "opacity-100 scale-100 pointer-events-auto"
 							: "opacity-0 scale-95 pointer-events-none"
 					}`}
 				style={{
-					height: "480px",
 					background: "rgba(15, 15, 15, 0.95)",
 					border: "1px solid rgba(255,255,255,0.1)",
 				}}
 			>
+				{/* Drag handle — mobile only */}
+				<div className="flex justify-center pt-3 pb-1 sm:hidden">
+					<div className="w-10 h-1 rounded-full bg-white/20" />
+				</div>
 				{/* HEADER */}
 				<div className="flex items-center gap-3 px-4 py-3 border-b border-white/10 bg-white/5">
 					<div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center text-sm font-bold select-none">
@@ -166,7 +170,9 @@ export default function ChatWidget() {
 			{/* FLOATING BUBBLE */}
 			<Button
 				onClick={() => setOpen((prev) => !prev)}
-				className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-white text-black shadow-2xl flex items-center justify-center hover:scale-110 hover:bg-neutral-200 active:scale-95 transition-all duration-300"
+				className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-14 h-14 rounded-full bg-white text-black shadow-2xl flex items-center justify-center hover:scale-110 hover:bg-neutral-200 active:scale-95 transition-all duration-300 ${
+					open ? "hidden sm:flex" : "flex"
+				}`}
 			>
 				{open ? (
 					// X icon when panel is open

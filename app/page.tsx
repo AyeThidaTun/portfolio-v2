@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import AboutMe from "./_components/about-me";
+import ChatWidget from "./_components/chat-widget";
 
 export default function Home() {
 	const [showPage, setShowPage] = useState(false);
@@ -57,6 +58,7 @@ export default function Home() {
 					</motion.div>
 				)}
 			</AnimatePresence>
+			<ChatWidget />
 		</section>
 	);
 }

@@ -1,4 +1,6 @@
 import { useChat } from "@ai-sdk/react";
+import { motion } from "framer-motion";
+import { Bot } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -51,7 +53,7 @@ export default function ChatWidget() {
 			<div
 				className={`fixed z-50 flex flex-col shadow-2xl overflow-hidden transition-all duration-300 backdrop-blur-md
 					bottom-0 right-0 w-full h-dvh rounded-t-2xl
-					sm:h-[480px] sm:bottom-24 sm:right-6 sm:w-96 sm:rounded-2xl sm:origin-bottom-right ${
+					sm:h-120 sm:bottom-24 sm:right-6 sm:w-96 sm:rounded-2xl sm:origin-bottom-right ${
 						open
 							? "opacity-100 scale-100 pointer-events-auto"
 							: "opacity-0 scale-95 pointer-events-none"
@@ -168,44 +170,53 @@ export default function ChatWidget() {
 				</form>
 			</div>
 			{/* FLOATING BUBBLE */}
-			<Button
-				onClick={() => setOpen((prev) => !prev)}
-				className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-14 h-14 rounded-full bg-white text-black shadow-2xl flex items-center justify-center hover:scale-110 hover:bg-neutral-200 active:scale-95 transition-all duration-300 ${
-					open ? "hidden sm:flex" : "flex"
-				}`}
+			<motion.div
+				initial={{ scale: 0 }}
+				animate={{ scale: [1, 1.2, 1] }}
+				transition={{
+					scale: {
+						delay: 0.8,
+						duration: 1.2,
+						repeat: Infinity,
+						repeatDelay: 1,
+						ease: "easeInOut",
+					},
+					default: {
+						type: "spring",
+						bounce: 0.5,
+						duration: 0.8,
+					},
+				}}
+				className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50"
 			>
-				{open ? (
-					// X icon when panel is open
-					<svg
-						width="20"
-						height="20"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						strokeWidth="2"
-					>
-						<title>Open</title>
-						<path d="M18 6L6 18M6 6l12 12" strokeLinecap="round" />
-					</svg>
-				) : (
-					// Chat icon when panel is closed
-					<svg
-						width="22"
-						height="22"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						strokeWidth="2"
-					>
-						<title>Close</title>
-						<path
-							d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-						/>
-					</svg>
-				)}
-			</Button>
+				<Button
+					onClick={() => setOpen((prev) => !prev)}
+					className={`rounded-full shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 ${
+						open
+							? "hidden sm:flex h-10 w-10 bg-neutral-800 hover:bg-neutral-700 text-white items-center justify-center"
+							: "flex items-center gap-2 px-4 py-2 bg-gray-300 hover:bg-neutral-700 text-black hover:text-white"
+					}`}
+				>
+					{open ? (
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							strokeWidth="2.5"
+						>
+							<title>Close</title>
+							<path d="M18 6L6 18M6 6l12 12" strokeLinecap="round" />
+						</svg>
+					) : (
+						<div className="flex items-center gap-2">
+							<Bot size={18} />
+							<span className="text-sm font-medium">Ask me!</span>
+						</div>
+					)}
+				</Button>
+			</motion.div>
 		</>
 	);
 }

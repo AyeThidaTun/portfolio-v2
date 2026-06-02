@@ -172,7 +172,7 @@ export default function ChatWidget() {
 			{/* FLOATING BUBBLE */}
 			<motion.div
 				initial={{ scale: 0 }}
-				animate={{ scale: [1, 1.2, 1] }}
+				animate={{ scale: open ? 1 : [1, 1.2, 1] }}
 				transition={{
 					scale: {
 						delay: 0.8,

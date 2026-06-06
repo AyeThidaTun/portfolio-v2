@@ -1,11 +1,11 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import NavigationHome from "../_components/navigation-home";
+import ContactForm from "./_components/contact-form";
 import Quote from "./_components/quote-block";
 import Section1 from "./_components/section-1";
 import Section2 from "./_components/section-2";
 import Section3 from "./_components/section-3";
-import ContactForm from "./_components/contact-form";
 // import Values from "./_components/values";
 export default function MoreAboutMe() {
 	return (

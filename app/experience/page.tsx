@@ -5,6 +5,7 @@ import Quote from "./_components/quote-block";
 import Section1 from "./_components/section-1";
 import Section2 from "./_components/section-2";
 import Section3 from "./_components/section-3";
+import ContactForm from "./_components/contact-form";
 // import Values from "./_components/values";
 export default function MoreAboutMe() {
 	return (
@@ -33,6 +34,7 @@ export default function MoreAboutMe() {
 			<Quote />
 			{/* <Values/> */}
 			<Section3 />
+			<ContactForm />
 		</section>
 	);
 }

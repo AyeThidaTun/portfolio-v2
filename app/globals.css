@@ -121,6 +121,15 @@
     @apply bg-background text-foreground;
   }
   .custom-cursor:hover {
-    cursor: url('/cursor.svg') 32 32, pointer;
+    cursor:
+      url("/cursor.svg") 32 32,
+      pointer;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

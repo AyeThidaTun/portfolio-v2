@@ -70,7 +70,7 @@ export function FocusCards({ cards }: { cards: Card[] }) {
 	const [hovered, setHovered] = useState<number | null>(null);
 
 	return (
-		<div className="w-full overflow-x-auto scroll-smooth snap-x snap-mandatory scroll-[0.5rem] scrollbar-custom dark:scrollbar-track-neutral-800 pb-5">
+		<div className="w-full no-scrollbar overflow-x-auto scroll-smooth snap-x snap-mandatory scroll-[0.5rem] scrollbar-custom dark:scrollbar-track-neutral-800 pb-5">
 			<div className="flex gap-6 p-6">
 				{cards.map((card, index) => (
 					<Card
